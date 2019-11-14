@@ -39,3 +39,10 @@ function getChangeAlternativeByGitUserBlunket(price, paid) {
 
     return change;
 }
+
+/* The code block below ONLY applies to Node.js */
+/* istanbul ignore next */
+if (typeof module !== 'undefined' && module.exports) {
+    // run the tests
+    module.exports = getChange;
+}
