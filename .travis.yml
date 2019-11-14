@@ -3,5 +3,10 @@ node_js:
   - lts/*
 before_install:
   - pip install --user codecov
+before_script:
+  - cd $TRAVIS_BUILD_DIR
 after_success:
   - codecov --file coverage/lcov.info --disable search
+
+env:
+  - TRAVIS_BUILD_DIR=./vending_machine
