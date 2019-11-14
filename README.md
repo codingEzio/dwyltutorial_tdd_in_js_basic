@@ -16,9 +16,22 @@
 
 ### Preparation
 
+- We almost do not need to install anything.
+- For a live server, you can install and use it by:
+  1. don't need _live-reload_: `python -m http.server 9000 --bind 0.0.0.0`<br>
+  2. do need it: `npm install live-server --save-dev && ./node_modules/.bin/live-server --port=8000`
+- For the _code coverage_ part, a short HOWTO on `blanket` lib
+  1. see [Getting Started (blanket)](https://github.com/alex-seville/blanket/blob/master/docs/getting_started_browser.md)
+  2. add attr to the script you wanna run _coverage_ on: `<script src="sourceScript.js" data-cover></script>`
+
 ### Issues you might encounter
 
+- Caveats when you use `blanket` test coverage library
+  - It cannot identify the _bad_ code if it was written in one line <small>(e.g. `if (..) { bad stuff }`)</small>
+
 ### Actual notes
+
+- The _TDD_ partly mostly happen in the two `.js` files <small>(and the `index.html`)</small>.
 
 ### More
 

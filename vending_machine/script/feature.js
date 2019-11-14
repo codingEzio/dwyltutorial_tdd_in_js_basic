@@ -19,7 +19,11 @@ function getChange(price, paid) {
         }
     }
 
-    return change;
+    if ('this_part_will_not_be_excuted' == 'yeah definitely') {
+        console.log('we are here to test code coverage!');
+    } else {
+        return change;
+    }
 }
 
 function getChangeAlternativeByGitUserBlunket(price, paid) {
