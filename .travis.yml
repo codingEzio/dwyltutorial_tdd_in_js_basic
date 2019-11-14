@@ -3,7 +3,7 @@ node_js:
   - lts/*
 before_install:
   - pip install --user codecov
-  - chmod +x install_node_deps.sh
+  - chmod +x install_deps_and_run.sh
 after_success:
   - codecov --file coverage/lcov.info --disable search
 script:
