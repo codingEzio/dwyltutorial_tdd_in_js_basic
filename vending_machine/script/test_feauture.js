@@ -16,3 +16,9 @@ test('getChange(212, 300) should be equal [50, 20, 10, 5, 2, 1]', function(asser
     let expected = [50, 20, 10, 5, 2, 1];
     assert.deepEqual(result, expected);
 });
+
+test('getChange(277, 600) should be equal [200, 100, 20, 2, 1]', function(assert) {
+    let result = getChange(277, 600);
+    let expected = [200, 100, 20, 2, 1];
+    assert.deepEqual(result, expected);
+});
