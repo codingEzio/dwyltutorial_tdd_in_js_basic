@@ -1,3 +1,3 @@
 #!/bin/sh
-cd $TRAVIS_BUILD_DIR/vending_machine
+cd $TRAVIS_BUILD_DIR
 npm install
