@@ -25,14 +25,18 @@
   2. add attr to the script you wanna run _coverage_ on: `<script src="sourceScript.js" data-cover></script>`
 - For the Node.js <small>(_server-side_)</small> tests
   1. install libraries: `npm install qunitjs qunit-tap istanbul --save-dev`
-  - `qunitjs`: core library
-  - `qunit-tap`: for command-line output
-  - `istanbul`: code coverage <small>(**_server-side_**)</small> <small>(better than _blanket_ lib)</small>
+     - `qunitjs`: core library
+     - `qunit-tap`: for command-line output
+     - `istanbul`: code coverage <small>(**_server-side_**)</small> <small>(better than _blanket_ lib)</small>
   2. actually running them
-  - testing only: `npm test`
-  - test coverage included
-    - `./node_modules/.bin/istanbul cover TEST_FILE.js` OR `npx istanbul cover test_feauture.js`
-    - after running the cmd you could see the detailed coverage report at `./coverage/../index.html`
+     - testing only: `npm test`
+     - test coverage included
+     - `./node_modules/.bin/istanbul cover TEST_FILE.js` OR `npx istanbul cover test_feauture.js`
+     - after running the cmd you could see the detailed coverage report at `./coverage/../index.html`
+- For the _JSDoc_ part
+  1. install library: `npm install jsdoc --save-dev`
+  2. run it: `./node_modules/.bin/jsdoc YOUR_MAIN_SCRIPT.js` OR `npx jsdoc YOUR_MAIN_SCRIPT.js`
+  3. check the result: `open ./out/global.html#getChange`
 
 ### Issues you might encounter
 
