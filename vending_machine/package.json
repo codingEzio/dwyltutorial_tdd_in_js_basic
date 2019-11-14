@@ -12,6 +12,11 @@
   "author": "joe",
   "license": "MIT",
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "istanbul": "^0.4.5",
+    "live-server": "^1.2.1",
+    "qunit-tap": "^1.5.1"
+  },
+  "dependencies": {
+    "qunitjs": "^2.4.1"
   }
 }
