@@ -42,6 +42,9 @@
 ### Actual notes
 
 - The _TDD_ partly mostly happen in the two `.js` files <small>(and the `index.html`)</small>.
+- Add code coverage badge at [_Codecov.io_](https://codecov.io/), here's something you need to know
+  1. Available on _Github_, _BitBucket_, _Gitlab_
+  2. It supports _public_ repo by default, requires additional perms for _private_ repo
 
 ### More
 
