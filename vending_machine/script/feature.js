@@ -1,6 +1,7 @@
 'use strcit';
 
 var coins = [200, 100, 50, 20, 10, 5, 2, 1];
+
 function getChange(price, paid) {
     let change = [];
     let coins_length = coins.length;
@@ -21,6 +22,16 @@ function getChange(price, paid) {
     return change;
 }
 
-function getChangeFunctional(price, paid) {
-    // pass
+function getChangeAlternativeByGitUserBlunket(price, paid) {
+    let difference = paid - price;
+    let change = [];
+
+    coins.forEach(function(coin) {
+        while (difference >= coin) {
+            change.push(coin);
+            difference = difference - coin;
+        }
+    });
+
+    return change;
 }
