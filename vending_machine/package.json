@@ -1,22 +1,28 @@
 {
-  "name": "vending_machine",
-  "version": "1.0.0",
-  "description": "learn TDD in JavaScript",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "tdd"
-  ],
-  "author": "joe",
-  "license": "MIT",
-  "devDependencies": {
-    "istanbul": "^0.4.5",
-    "live-server": "^1.2.1",
-    "qunit-tap": "^1.5.1"
-  },
-  "dependencies": {
-    "qunitjs": "^2.4.1"
-  }
+    "name": "vending_machine",
+    "version": "1.0.0",
+    "description": "learn TDD in JavaScript",
+    "main": "index.js",
+    "scripts": {
+        "test": "istanbul cover test_feature.js",
+        "open-coverage": "open ./coverage/lcov-report/index.html",
+        "start": "live-server --port=8000",
+        "docs": "jsdoc feature.js",
+        "open-docs": "open ./out/global.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/codingEzio/dwyltutorial_tdd_in_js_basic.git"
+    },
+    "keywords": [
+        "tdd"
+    ],
+    "author": "joe",
+    "license": "MIT",
+    "devDependencies": {
+        "istanbul": "^0.4.5",
+        "live-server": "^1.2.1",
+        "qunit-tap": "^1.5.1",
+        "qunitjs": "^2.4.1"
+    }
 }
