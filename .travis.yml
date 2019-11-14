@@ -8,5 +8,6 @@ after_success:
   - codecov --file coverage/lcov.info --disable search
 script:
   - bash install_node_deps.sh
+  - npm test
 env:
   - TRAVIS_BUILD_DIR=./vending_machine
