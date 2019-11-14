@@ -3,9 +3,8 @@ node_js:
   - lts/*
 before_install:
   - pip install --user codecov
-before_script:
-  - cd $TRAVIS_BUILD_DIR
-  - npm install
+install:
+  - cd $TRAVIS_BUILD_DIR && npm install
 after_success:
   - codecov --file coverage/lcov.info --disable search
 
